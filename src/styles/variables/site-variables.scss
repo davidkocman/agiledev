@@ -1,0 +1,53 @@
+/* stylelint-disable */
+$site-variables: (
+	color: (
+		primary:#22196f,
+		skills:	#271d79,
+		border:	#4e51b7,
+		button:	#0cb0a7,
+		link:	#09c4ac,
+		regular:#787bc6,
+		bold:	#f9eedd,
+		svg:	#6f66b8
+	),
+	font: (
+		script: (
+			fontstack: ('BeVietnam', sans-serif),
+			appearance: (
+				default: font script style regular,
+				regular: (
+					style: normal,
+					weight: 400,
+				),
+				bold: (
+					style: normal,
+					weight: 700,
+				),
+				extra-bold: (
+					style: normal,
+					weight: 800,
+				),
+			),
+		),
+		// fa: (
+		// 	fontstack: ('Font Awesome Regular', 'Font Awesome Solid', 'Font Awesome Brands'),
+		// 	appearance: (
+		// 		regular: (
+		// 			style: normal,
+		// 			weight: 400,
+		// 		),
+		// 	)
+		// ),
+		// body: font sans-serif,
+		// heading: font sans-serif,
+	),
+	min-line-height: 1.2,
+	size: (
+		gallery-limit: 100rem,
+		header: (
+			0: 3rem,
+			8: 6rem,
+		),
+		layout-limit: 1920px,
+	),
+);

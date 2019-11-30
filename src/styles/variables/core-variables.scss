@@ -1,0 +1,528 @@
+/* stylelint-disable */
+$core-variables: (
+	allow-half-line: true,
+	asset: (
+		base: '/assets',
+		image: 'images',
+		font: 'fonts',
+	),
+	base: (
+		font-size: 16px,
+		line-height: 24px,
+	),
+	breakpoint: (
+		0: 0,
+		3: 360px,
+		4: 480px,
+		5: 512px,
+		6: 640px,
+		7: 768px,
+		8: 800px,
+		9: 960px,
+		10: 1024px,
+		11: 1152px,
+		12: 1280px,
+		13: 1366px,
+		14: 1440px,
+		15: 1536px,
+		16: 1600px,
+		17: 1700px,
+		18: 1800px,
+		19: 1920px,
+		l: landscape,
+		p: portrait,
+	),
+	char: (
+		// SPECIAL CHARACTERS
+		quot: '\0022',			// " quotation mark
+		amp: '\0026',			// & ampersand
+		lt: '\003c',			// < less-than
+		gt: '\003e',			// > greater-than sign
+		// LATIN
+		nbsp: '\00a0',			// 160 break space
+		iexcl: '\00a1',			// ¡ inverted exclamation mark
+		cent: '\00a2',			// ¢ cent sign
+		pound: '\00a3',			// £ pound sterling sign
+		curren: '\00a4',		// ¤ general currency sign
+		yen: '\00a5',			// ¥ yen sign
+		indianrupee: '\20B9',	// ₹ Indian Rupee (INR) sign
+		brvbar: '\00a6',		// ¦ broken (vertical) bar
+		sect: '\00a7',			// § section sign
+		uml: '\00a8',			// ¨ umlaut (dieresis
+		copy: '\00a9',			// © copyright sign
+		ordf: '\00aa',			// ª ordinal indicator, feminine
+		laquo: '\00ab',			// « angle quotation mark, left
+		_not: '\00ac',			// ¬ not sign
+		shy: '\00ad',			// 173 hyphen
+		reg: '\00ae',			// ® registered sign
+		macr: '\00af',			// ¯ macron
+		deg: '\00b0',			// ° degree sign
+		plusmn: '\00b1',		// ± plus-or-minus sign
+		sup2: '\00b2',			// ² superscript two
+		sup3: '\00b3',			// ³ superscript three
+		acute: '\00b4',			// ´ acute accent
+		micro: '\00b5',			// µ micro sign
+		para: '\00b6',			// ¶ pilcrow (paragraph sign
+		middot: '\00b7',		// · middle dot
+		cedil: '\00b8',			// ¸ cedilla
+		sup1: '\00b9',			// ¹ superscript one
+		ordm: '\00ba',			// º ordinal indicator, masculine
+		raquo: '\00bb',			// » angle quotation mark, right
+		frac14: '\00bc',		// ¼ fraction one-quarter
+		frac12: '\00bd',		// ½ fraction one-half
+		frac34: '\00be',		// ¾ fraction three-quarters
+		iquest: '\00bf',		// ¿ inverted question mark
+		Agrave: '\00c0',		// À capital A, grave accent
+		Aacute: '\00c1',		// Á capital A, acute accent
+		Acirc: '\00c2',			// Â capital A, circumflex accent
+		Atilde: '\00c3',		// Ã capital A, tilde
+		Auml: '\00c4',			// Ä capital A, dieresis or umlaut mark
+		Aring: '\00c5',			// Å capital A, ring
+		AElig: '\00c6',			// Æ capital AE diphthong (ligature
+		Ccedil: '\00c7',		// Ç capital C, cedilla
+		Egrave: '\00c8',		// È capital E, grave accent
+		Eacute: '\00c9',		// É capital E, acute accent
+		Ecirc: '\00ca',			// Ê capital E, circumflex accent
+		Euml: '\00cb',			// Ë capital E, dieresis or umlaut mark
+		Igrave: '\00cc',		// Ì capital I, grave accent
+		Iacute: '\00cd',		// Í capital I, acute accent
+		Icirc: '\00ce',			// Î capital I, circumflex accent
+		Iuml: '\00cf',			// Ï capital I, dieresis or umlaut mark
+		ETH: '\00d0',			// Ð capital Eth, Icelandic
+		Ntilde: '\00d1',		// Ñ capital N, tilde
+		Ograve: '\00d2',		// Ò capital O, grave accent
+		Oacute: '\00d3',		// Ó capital O, acute accent
+		Ocirc: '\00d4',			// Ô capital O, circumflex accent
+		Otilde: '\00d5',		// Õ capital O, tilde
+		Ouml: '\00d6',			// Ö capital O, dieresis or umlaut mark
+		times: '\00d7',			// × multiply sign
+		Oslash: '\00d8',		// Ø capital O, slash
+		Ugrave: '\00d9',		// Ù capital U, grave accent
+		Uacute: '\00da',		// Ú capital U, acute accent
+		Ucirc: '\00db',			// Û capital U, circumflex accent
+		Uuml: '\00dc',			// Ü capital U, dieresis or umlaut mark
+		Yacute: '\00dd',		// Ý capital Y, acute accent
+		THORN: '\00de',			// Þ capital THORN, Icelandic
+		szlig: '\00df',			// ß small sharp s, German (sz ligature
+		agrave: '\00e0',		// à small a, grave accent
+		aacute: '\00e1',		// á small a, acute accent
+		acirc: '\00e2',			// â small a, circumflex accent
+		atilde: '\00e3',		// ã small a, tilde
+		auml: '\00e4',			// ä small a, dieresis or umlaut mark
+		aring: '\00e5',			// å small a, ring
+		aelig: '\00e6',			// æ small ae diphthong (ligature
+		ccedil: '\00e7',		// ç small c, cedilla
+		egrave: '\00e8',		// è small e, grave accent
+		eacute: '\00e9',		// é small e, acute accent
+		ecirc: '\00ea',			// ê small e, circumflex accent
+		euml: '\00eb',			// ë small e, dieresis or umlaut mark
+		igrave: '\00ec',		// ì small i, grave accent
+		iacute: '\00ed',		// í small i, acute accent
+		icirc: '\00ee',			// î small i, circumflex accent
+		iuml: '\00ef',			// ï small i, dieresis or umlaut mark
+		eth: '\00f0',			// ð small eth, Icelandic
+		ntilde: '\00f1',		// ñ small n, tilde
+		ograve: '\00f2',		// ò small o, grave accent
+		oacute: '\00f3',		// ó small o, acute accent
+		ocirc: '\00f4',			// ô small o, circumflex accent
+		otilde: '\00f5',		// õ small o, tilde
+		ouml: '\00f6',			// ö small o, dieresis or umlaut mark
+		divide: '\00f7',		// ÷ divide sign
+		oslash: '\00f8',		// ø small o, slash
+		ugrave: '\00f9',		// ù small u, grave accent
+		uacute: '\00fa',		// ú small u, acute accent
+		ucirc: '\00fb',			// û small u, circumflex accent
+		uuml: '\00fc',			// ü small u, dieresis or umlaut mark
+		yacute: '\00fd',		// ý small y, acute accent
+		thorn: '\00fe',			// þ small thorn, Icelandic
+		yuml: '\00ff',			// ÿ small y, dieresis or umlaut mark
+		LATIN EXTENDED
+		OElig: '\0152',			// Œ latin capital ligature oe
+		oelig: '\0153',			// œ latin small ligature oe
+		Scaron: '\0160',		// Š latin capital letter s with caron
+		scaron: '\0161',		// š latin small letter s with caron
+		Yuml: '\0178',			// Ÿ latin capital letter y with diaeresis
+		fnof: '\0192',			// ƒ latin small f with hook
+		// SPACING MODIFIER LETTERS
+		circ: '\02c6',			// ˆ circumflex accent
+		tilde: '\02dc',			// ˜ u
+		// GREEK
+		Alpha: '\0391',			// Α greek capital letter alpha
+		Beta: '\0392',			// Β greek capital letter beta
+		Gamma: '\0393',			// Γ greek capital letter gamma
+		Delta: '\0394',			// Δ greek capital letter delta
+		Epsilon: '\0395',		// Ε greek capital letter epsilon
+		Zeta: '\0396',			// Ζ greek capital letter zeta
+		Eta: '\0397',			// Η greek capital letter eta
+		Theta: '\0398',			// Θ greek capital letter theta
+		Iota: '\0399',			// Ι greek capital letter iota
+		Kappa: '\039a',			// Κ greek capital letter kappa
+		Lambda: '\039b',		// Λ greek capital letter lambda
+		Mu: '\039c',			// Μ greek capital letter mu
+		Nu: '\039d',			// Ν greek capital letter nu
+		Xi: '\039e',			// Ξ greek capital letter xi
+		Omicron: '\039f',		// Ο greek capital letter omicron
+		Pi: '\03a0',			// Π greek capital letter pi
+		Rho: '\03a1',			// Ρ greek capital letter rho
+		Sigma: '\03a3',			// Σ greek capital letter sigma
+		Tau: '\03a4',			// Τ greek capital letter tau
+		Upsilon: '\03a5',		// Υ greek capital letter upsilon
+		Phi: '\03a6',			// Φ greek capital letter phi
+		Chi: '\03a7',			// Χ greek capital letter chi
+		Psi: '\03a8',			// Ψ greek capital letter psi
+		Omega: '\03a9',			// Ω greek capital letter omega
+		alpha: '\03b1',			// α greek small letter alpha
+		beta: '\03b2',			// β greek small letter beta
+		gamma: '\03b3',			// γ greek small letter gamma
+		delta: '\03b4',			// δ greek small letter delta
+		epsilon: '\03b5',		// ε greek small letter epsilon
+		zeta: '\03b6',			// ζ greek small letter zeta
+		eta: '\03b7',			// η greek small letter eta
+		theta: '\03b8',			// θ greek small letter theta
+		iota: '\03b9',			// ι greek small letter iota
+		kappa: '\03ba',			// κ greek small letter kappa
+		lambda: '\03bb',		// λ greek small letter lambda
+		mu: '\03bc',			// μ greek small letter mu
+		nu: '\03bd',			// ν greek small letter nu
+		xi: '\03be',			// ξ greek small letter xi
+		omicron: '\03bf',		// ο greek small letter omicron
+		pi: '\03c0',			// π greek small letter pi
+		rho: '\03c1',			// ρ greek small letter rho
+		sigmaf: '\03C2',		// ς greek small letter final sigma
+		sigma: '\03C3',			// σ greek small letter sigma
+		tau: '\03C4',			// τ greek small letter tau
+		upsilon: '\03C5',		// υ greek small letter upsilon
+		phi: '\03C6',			// φ greek small letter phi
+		chi: '\03C7',			// χ greek small letter chi
+		psi: '\03C8',			// ψ greek small letter psi
+		omega: '\03C9',			// ω greek small letter omega
+		thetasym: '\03D1',		// ϑ greek small letter theta symbol
+		upsih: '\03D2',			// ϒ greek upsilon with hook symbol
+		piv: '\03D6',			// ϖ greek pi symbol
+		// PUNCTUATION
+		ensp: '\2002',			//   en space
+		emsp: '\2003',			//   em space
+		thinsp: '\2009',		//   thin space
+		zwnj: '\200C',			// ‌ zero width non-joiner+200C NEW
+		zwj: '\200D',			// ‍ zero width joiner+200D NEW
+		lrm: '\200E',			// ‎ left-to-right mark+200E NEW
+		rlm: '\200F',			// ‏ right-to-left mark+200F NEW
+		ndash: '\2013',			// – en dash
+		mdash: '\2014',			// — em dash
+		lsquo: '\2018',			// ‘ left single quotation mark
+		rsquo: '\2019',			// ’ right single quotation mark
+		sbquo: '\201A',			// ‚ single low-9 quotation mark
+		ldquo: '\201C',			// “ left double quotation mark
+		rdquo: '\201D',			// ” right double quotation mark
+		bdquo: '\201E',			// „ double low-9 quotation mark
+		dagger: '\2020',		// † dagger
+		Dagger: '\2021',		// ‡ double dagger
+		permil: '\2030',		// ‰ per mille sign
+		lsaquo:	'\2039',		// ‹ single left-pointing angle quotation mark
+		rsaquo: '\203A', 		// › single right-pointing angle quotation mark ,
+		bull: '\2022',			// • bullet, a.k.a. black small circle, bullet is NOT the same as bullet operator — u+2219
+		hellip:	'\2026',		// … horizontal ellipsis, a.k.a. three dot leader
+		prime: '\2032',			// ′ prime, a.k.a. minutes, a.k.a. feet
+		Prime: '\2033',			// ″ double prime, a.k.a. seconds, a.k.a. inches
+		oline: '\203E',			// ‾ overline, a.k.a. spacing overscore
+		frasl: '\2044',			// ⁄ fraction slash
+		// LETTER-LIKE SYMBOLS
+		weierp: '\2118',		// ℘ script capital P, a.k.a. power set, a.k.a. Weierstrass p
+		image: '\2111',			// ℑ blackletter capital I, a.k.a. imaginary part
+		real: '\211C',			// ℜ blackletter capital R, a.k.a. real part symbol
+		trade: '\2122',			// ™ trade mark sign
+		alefsym: '\2135',		// ℵ alef symbol
+		// ARROWS
+		larr: '\2190',			// ← leftwards arrow	
+		uarr: '\2191',			// ↑ upwards arrow
+		rarr: '\2192',			// → rightwards arrow	
+		darr: '\2193',			// ↓ downwards arrow	
+		harr: '\2194',			// ↔ left right arrow
+		crarr: '\21B5',			// ↵ downwards arrow with corner leftwards, a.k.a. carriage return
+		lArr: '\21D0',			// ⇐ leftwards double arrow, can be used for ‘is implied by’
+		uArr: '\21D1',			// ⇑ upwards double arrow
+		rArr: '\21D2',			// ⇒ rightwards double arrow
+		dArr: '\21D3',			// ⇓ downwards double arrow
+		hArr: '\21D4',			// ⇔ left right double arrow
+		left-triangle: '\25C0',	// ◄ black left pointing triangle
+		right-triangle: '\25b6',// ► black right pointing triangle
+		up-triangle: '\25b2',	// ▲ black up pointing triangle
+		down-triangle: '\25bc',	// ▼ black down pointing triangle
+		// MATHEMATICAL OPERATORS
+		forall: '\2200',		// ∀ for all
+		part: '\2202',			// ∂ partial differential
+		exist: '\2203',			// ∃ there exists
+		empty: '\2205',			// ∅ empty set, a.k.a. null set, a.k.a. diameter
+		nabla: '\2207',			// ∇ nabla, a.k.a. backward difference
+		isin: '\2208',			// ∈ element of
+		notin: '\2209',			// ∉ not an element of
+		ni: '\220B',			// ∋ contains as member
+		prod: '\220F',			// ∏ n-ary product, a.k.a. product sign
+		sum: '\2211',			// ∑ n-ary sumation
+		minus: '\2212',			// − minus sign
+		lowast: '\2217',		// ∗ asterisk operator
+		radic: '\221A',			// √ square root, a.k.a. radical sign
+		prop: '\221D',			// ∝ proportional to
+		infin: '\221E',			// ∞ infinity
+		ang: '\2220',			// ∠ angle
+		and: '\2227',			// ⊥ logical and, a.k.a. wedge
+		or: '\2228',			// ⊦ logical or, a.k.a. vee
+		cap: '\2229',			// ∩ intersection, a.k.a. cap
+		cup: '\222A',			// ∪ union, a.k.a. cup
+		int: '\222B',			// ∫ integral
+		there4: '\2234',		// ∴ therefore
+		sim: '\223C',			// ∼ tilde
+		cong: '\2245',			// ≅ approximately equal to
+		asymp: '\2248',			// ≈ almost equal to, a.k.a. asymptotic to
+		ne: '\2260',			// ≠ not equal to
+		equiv: '\2261',			// ≡ identical to
+		le: '\2264',			// ≤ less-than or equal to
+		ge: '\2265',			// ≥ greater-than or equal to
+		sub: '\2282',			// ⊂ subset of
+		sup: '\2283',			// ⊃ superset of
+		nsub: '\2284',			// ⊄ not a subset of
+		sube: '\2286',			// ⊆ subset of or equal to
+		supe: '\2287',			// ⊇ superset of or equal to
+		oplus: '\2295',			// ⊕ circled plus, a.k.a. direct sum
+		otimes: '\2297',		// ⊗ circled times, a.k.a. vector product
+		perp: '\22A5',			// ⊥ up tack
+		sdot: '\22C5',			// ⋅ dot operator
+		// TECHNICAL
+		lceil: '\2308',			// ⌈ left ceiling, a.k.a. apl upstile
+		rceil: '\2309',			// ⌉ right ceiling
+		lfloor: '\230A',		// ⌊ left floor, a.k.a. apl downstile
+		rfloor: '\230B',		// ⌋ right floor
+		lang: '\2329',			// 〈 left-pointing angle bracket
+		rang: '\232A',			// 〉 right-pointing angle bracket
+		// MISCELLANEOUS
+		loz: '\25CA',			  // ◊ lozenge
+		spades: '\2660',		// ♠ black spade suit
+		clubs: '\2663',			// ♣ black club suit, a.k.a. shamrock
+		hearts: '\2665',		// ♥ black heart suit, a.k.a. valentine
+		diams: '\2666',			// ♦ black diamond suit
+
+		carret: '\A',
+		euro: '\20AC',
+		slash: '\002F',
+	),
+	color: (
+		black: 0,
+		white: 100,
+		muted: 50,
+		debug: cyan .5,
+		text: color black,
+		// Messages
+		error: #F44336,
+		info: #2196F3,
+		success: #4CAF50,
+		warning: #FF9800,
+		// Selection
+		selection: (
+			background-color: color black,
+			color: auto,
+		),
+		// Social media
+		disqus: #2e9fff,
+		facebook: #3b5998,
+		messenger: #0084ff,
+		google: #d34836,
+		twitter: #1da1f2,
+		whatsapp: #25D366,
+	),
+	compatibility: (
+		browser-minimum-versions: (
+			'chrome': '53',
+			'firefox': '43',
+			'safari': '9.1',
+			'ie': '11',
+			'ios-safari': '9.3',
+			'opera': '40',
+		),
+	),
+	debug: false,
+	direction: (
+		t: top, 
+		r: right, 
+		b: bottom, 
+		l: left, 
+		x: right left, 
+		y: top bottom, 
+		xy: top right bottom left,
+	),
+	dropcap: (
+		0: (
+			background: null,
+			color: null,
+			font: heading,
+			margin: null,
+			padding: null,
+			size: 4,
+		),
+	),
+	font: (
+		default: font sans-serif,
+		smoothing: true,
+		size: 0,
+		sans-serif: (
+			fontstack: ('Open Sans', sans-serif),
+			body-height: 1,
+			cap-height: 0.71375,
+			x-height: 0.6,
+			offset: -0.112,
+			style: (
+				default: font sans-serif style regular,
+				strong: font sans-serif style bold,
+				regular: (
+					style: normal,
+					weight: 400,
+				),
+				bold: (
+					style: normal,
+					weight: 700,
+				),
+			),
+		),
+		serif: (
+			fontstack: (Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif),
+			body-height: 1,
+			cap-height: 0.71375,
+			x-height: 0.6,
+			offset: -0.112,
+			style: (
+				default: font serif style regular,
+				strong: font serif style bold,
+				regular: (
+					style: normal,
+					weight: 400,
+				),
+				bold: (
+					style: normal,
+					weight: 700,
+				),
+			),
+		),
+		mono: (
+			fontstack: ('Source Code Pro', monospace),
+			body-height: 1,
+			cap-height: 0.71375,
+			x-height: 0.6,
+			offset: -0.112,
+			style: (
+				default: font mono style regular,
+				strong: font mono style bold,
+				regular: (
+					style: normal,
+					weight: 400,
+				),
+				bold: (
+					style: normal,
+					weight: 700,
+				),
+			),
+		),
+	),
+	gap: ( // breakpoint : number of lines of vertical grid
+		0: 1,
+ 	),
+	min-line-height: 1.25,
+	px-to-rem-limit: 4,
+	otf: (
+		liga: 1,
+	),
+	prefix: (
+		appearance: (webkit, moz),
+		column: (webkit, moz),
+		font-feature-settings: (webkit),
+		hyphens: (webkit, ms),
+		text-decoration: (webkit),
+	),
+	speed: (
+		tick: 200ms,
+		fast: 200ms,
+		medium: 400ms,
+		slow: 600ms,
+		test: 1s,
+	),
+	text: (
+		indent: 2,
+		limit: 40em, //* 65 to 80 characters / 9 to 12 words
+		hyphens: auto,
+		letter-spacing: (
+			small-caps: .03em,
+			caps: .03em,
+		),	
+		list-image: bull,
+		// multicolumn: ( //* number of columns: from breakpoint
+		// 	2: 8,
+		// 	3: 10,
+		// 	4: 12,
+		// ),
+		ol: decimal,
+		// sup-position: -0.5em,
+		// sub-position: -0.25em,
+		rendering: geometricPrecision,
+	),
+	timing: (
+		arc: (
+			in: cubic-bezier(0,1,1,1),
+			out: cubic-bezier(1,0,1,1),
+		),
+		bounce: (
+			in: cubic-bezier(.5,0,.5,-.5),
+			out: cubic-bezier(.5,1.5,.5,1),
+		),
+		default: ease-in-out,
+		
+		//* https://css-tricks.com/snippets/sass/easing-map-get-function/
+		/* usage:
+		.example {
+			animation: there-and-back 2.5s ease(in-quad) infinite alternate;
+		}
+		*/
+		ease: (
+			in: (
+				quad:  cubic-bezier(0.550,  0.085, 0.680, 0.530),
+				cubic: cubic-bezier(0.550,  0.055, 0.675, 0.190),
+				quart: cubic-bezier(0.895,  0.030, 0.685, 0.220),
+				quint: cubic-bezier(0.755,  0.050, 0.855, 0.060),
+				sine:  cubic-bezier(0.470,  0.000, 0.745, 0.715),
+				expo:  cubic-bezier(0.950,  0.050, 0.795, 0.035),
+				circ:  cubic-bezier(0.600,  0.040, 0.980, 0.335),
+				back:  cubic-bezier(0.600, -0.280, 0.735, 0.045),
+			),
+			out: (
+				quad:  cubic-bezier(0.250,  0.460, 0.450, 0.940),
+				cubic: cubic-bezier(0.215,  0.610, 0.355, 1.000),
+				quart: cubic-bezier(0.165,  0.840, 0.440, 1.000),
+				quint: cubic-bezier(0.230,  1.000, 0.320, 1.000),
+				sine:  cubic-bezier(0.390,  0.575, 0.565, 1.000),
+				expo:  cubic-bezier(0.190,  1.000, 0.220, 1.000),
+				circ:  cubic-bezier(0.075,  0.820, 0.165, 1.000),
+				back:  cubic-bezier(0.175,  0.885, 0.320, 1.275),
+			),
+			in-out: (
+				quad:  cubic-bezier(0.455,  0.030, 0.515, 0.955),
+				cubic: cubic-bezier(0.645,  0.045, 0.355, 1.000),
+				quart: cubic-bezier(0.770,  0.000, 0.175, 1.000),
+				quint: cubic-bezier(0.860,  0.000, 0.070, 1.000),
+				sine:  cubic-bezier(0.445,  0.050, 0.550, 0.950),
+				expo:  cubic-bezier(1.000,  0.000, 0.000, 1.000),
+				circ:  cubic-bezier(0.785,  0.135, 0.150, 0.860),
+				back:  cubic-bezier(0.680, -0.550, 0.265, 1.550)
+			),
+		),
+		ease-in: ease-in,
+		ease-in-out: ease-in-out,
+		ease-out: ease-out,
+		jump: (
+			in: cubic-bezier(0,0,.5,-.5),
+			in-out: cubic-bezier(.5,-.5,.5,1.5),
+			out: cubic-bezier(.5,1.5,1,1),
+		),
+		linear: linear,
+		pop: (
+			in: cubic-bezier(0,.5,.5,0),
+			out: cubic-bezier(.5,0,0,.5),
+		),
+	),
+);

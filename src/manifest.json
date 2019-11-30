@@ -1,0 +1,18 @@
+{
+	"name": "Long project name | ProjectName",
+	"short_name": "Project Name",
+	"start_url": "/",
+	"orientation": "portrait-primary",
+	"lang": "sk",
+	"description": "Project description.",
+	"icons": [
+		{
+			"src": "media/images/favicons/favicon-32x32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		}
+	],
+	"theme_color": "#f8fbff",
+	"background_color": "#f8fbff",
+	"display": "browser"
+}

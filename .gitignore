@@ -1,0 +1,60 @@
+# Folders / Files #
+###################
+node_modules
+bower_components
+.htaccess
+package-lock.json
+
+# Optional npm cache directory
+.npm
+
+# Folders #
+###########
+.vscode
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+logs
+*.log
+*.sql
+*.sqlite
+npm-debug.log*
+
+# SASS Cache
+.sass-cache
+.sass-cache/*
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Misc
+.publish

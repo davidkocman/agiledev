@@ -1,0 +1,4 @@
+.pagewrapper {
+	@include margin(0 auto);
+	@include max-size(1240px _);
+}
