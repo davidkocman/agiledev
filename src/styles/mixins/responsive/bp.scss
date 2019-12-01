@@ -42,6 +42,7 @@
 					$max: em(get(breakpoint $last) - 1, 16px);
 					@if $min > 0 {
 						$m: append($m, (min-width: $min), space);
+						$m: append($m, ' and ');
 						$m: append($m, (max-width: $max), space);
 					} @else {
 						$m: append($m, (max-width: $max), space);
@@ -50,7 +51,6 @@
 			} @else if length($query) > 2 {
 				@error "Invalid number of breakpoints";
 			}
-			$m: string($m, ' and ');
 			$media: append($media, $m, comma);
 		}
 		@media #{$media} {

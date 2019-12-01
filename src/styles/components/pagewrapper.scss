@@ -1,4 +1,8 @@
 .pagewrapper {
 	@include margin(0 auto);
 	@include max-size(1240px _);
+	@include padding(0 20px);
+	@include bp(12) {
+		padding: 0;
+	}
 }

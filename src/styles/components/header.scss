@@ -13,13 +13,21 @@
 				size: 14px,
 			));
 			color: color(regular);
+			display: none;
 			letter-spacing: 0;
 			position: relative;
+			@include bp(7) {
+				display: block;
+			}
 			&::before {
 				@include absolute(12px _ _ -330px);
 				@include size (300px 1px);
 				background-color: color(link);
 				content: '';
+				display: none;
+				@include bp(11) {
+					display: block;
+				}
 			}
 			a {
 				@include font((
@@ -39,16 +47,9 @@
 			grid-gap: rem(20px);
 			grid-template-columns: repeat(4, 1fr);
 			.icon {
-				svg {
-					@include size(17px 14px);
-					fill: color(svg);
+				img {
+					@include size(18px);
 					transition: all speed(fast) timing(default);
-				}
-				&:focus,
-				&:hover {
-					svg {
-						fill: color(white);
-					}
 				}
 			}
 		}

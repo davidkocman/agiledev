@@ -1,5 +1,81 @@
 .hero {
-	background-image: url('../assets/img/bgr-elements.svg');
-	background-size: contain;
-	background-repeat: no-repeat;
+	@include padding(100px _ _);
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr;
+	@include bp(12) {
+		grid-template-columns: 1fr 1fr;
+	}
+	&::before {
+		@include absolute(-100px _ _ 50%, -1);
+		@include size(100vw _);
+		content: url('../assets/img/bgr-elements.svg');
+		transform: translateX(-50%);
+	}
+	&__text {
+		.h1 {
+			@include margin(_ _ 26px _);
+			@include font((
+				appearance: extra-bold,
+				family: script,
+				size: 36px 54px,
+			));
+			color: color(bold);
+			letter-spacing: 0;
+			@include bp(4) {
+				@include font((
+					size: 40px 60px,
+				));
+			}
+		}
+		.h2 {
+			@include font((
+				appearance: regular,
+				family: script,
+				size: 16px 34px,
+			));
+			color: color(regular);
+			letter-spacing: 0;
+		}
+	}
+	&__image {
+		position: relative;
+		img {
+			@include margin(48px auto _);
+			@include size(100% _);
+			position: relative;
+			@include bp(12) {
+				@include absolute(180px -80px _ _);
+				@include size(810px _);
+			}
+		}
+	}
+	.ctas {
+		@include margin(60px _ _ _);
+		display: flex;
+		flex-direction: row;
+		.cta {
+			@include size(200px 50px);
+			@include font((
+				appearance: bold,
+				family: script,
+				size: 14px,
+			));
+			align-items: center;
+			border-radius: rem(8px);
+			display: flex;
+			justify-content: center;
+			letter-spacing: 0;
+			&--exp {
+				@include margin(_ 24px _ _);
+				background-color: color(button);
+				box-shadow: 0 4px 20px 0 rgba(9, 196, 172, 0.5);
+				color: color(white);
+			}
+			&--contact {
+				border: solid 1px color(border);
+				color: color(link);
+			}
+		}
+	}
 }
