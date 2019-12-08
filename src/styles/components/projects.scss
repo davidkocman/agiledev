@@ -1,0 +1,47 @@
+.projects {
+	@include padding(80px _);
+	background-color: #1f166a;
+	position: relative;
+	text-align: center;
+	z-index: 0;
+	&::before,
+	&::after {
+		@include size(100vw 100%);
+		background-color: inherit;
+		content: '';
+	}
+	&::before {
+		@include absolute(0 _ _ 0, -1);
+	}
+	&::after {
+		@include absolute(0 0 _ _, -1);
+	}
+	.h {
+		@include margin(_ _ 26px _);
+		@include font((
+			appearance: bold,
+			family: script,
+			size: 40px 60px,
+		));
+		color: color(bold);
+		letter-spacing: 0;
+	}
+	p {
+		@include margin(_ 15% 60px);
+		@include font((
+			appearance: regular,
+			family: script,
+			size: 16px 36px,
+		));
+		color: color(regular);
+		letter-spacing: 0;
+		span {
+			color: color(white);
+		}
+	}
+	.companies {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+}

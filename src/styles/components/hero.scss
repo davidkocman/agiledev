@@ -1,4 +1,5 @@
 .hero {
+	@include min-size(_ 100vh);
 	@include padding(100px _ _);
 	position: relative;
 	display: grid;
@@ -54,28 +55,5 @@
 		@include margin(60px _ _ _);
 		display: flex;
 		flex-direction: row;
-		.cta {
-			@include size(200px 50px);
-			@include font((
-				appearance: bold,
-				family: script,
-				size: 14px,
-			));
-			align-items: center;
-			border-radius: rem(8px);
-			display: flex;
-			justify-content: center;
-			letter-spacing: 0;
-			&--exp {
-				@include margin(_ 24px _ _);
-				background-color: color(button);
-				box-shadow: 0 4px 20px 0 rgba(9, 196, 172, 0.5);
-				color: color(white);
-			}
-			&--contact {
-				border: solid 1px color(border);
-				color: color(link);
-			}
-		}
 	}
 }
