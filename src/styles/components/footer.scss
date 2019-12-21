@@ -1,0 +1,98 @@
+.site-footer {
+	@include padding(114px _ 100px);
+	background-color: color(footer);
+	position: relative;
+	text-align: center;
+	@include bp(7) {
+		text-align: left;
+	}
+	&::before,
+	&::after {
+		@include size(100vw 100%);
+		background-color: inherit;
+		content: '';
+	}
+	&::before {
+		@include absolute(0 _ _ 0, -1);
+	}
+	&::after {
+		@include absolute(0 0 _ _, -1);
+	}
+	.heading {
+		@include margin(_ _ 16px _);
+		@include font((
+			appearance: bold,
+			family: script,
+			size: (
+				0: 30px 44px,
+				7: 40px 60px
+			),
+		));
+		color: color(bold);
+		letter-spacing: 0;
+	}
+	.items{
+		display: grid;
+		grid-gap: 20px;
+		grid-template-columns: 1fr;
+		@include bp(7) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+		.item {
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			@include bp (7) {
+				align-items: flex-start;
+			}
+			ul {
+				@include margin(_ _ 16px _);
+				li {
+					@include font((
+						appearance: regular,
+						family: script,
+						size: 16px 36px,
+					));
+					color: color(regular);
+					letter-spacing: 0;
+				}
+			}
+			.social {
+				display: flex;
+				flex-direction: row;
+				.icon {
+					@include margin(_ 8px _ _);
+					@include size(18px _);
+				}
+			}
+			span {
+				@include font((
+					appearance: regular,
+					family: script,
+					size: 14px,
+				));
+				color: color(regular);
+				letter-spacing: 0;
+			}
+			.email,
+			.phone {
+				@include font((
+					appearance: bold,
+					family: script,
+					size: (
+						0: 22px 60px,
+						7: 26px 44px
+					),
+				));
+				letter-spacing: 0;
+			}
+			.email {
+				color: color(link);
+			}
+			.phone {
+				color: color(white);
+			}
+		}
+	}
+}

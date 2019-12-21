@@ -45,11 +45,8 @@
                     <encode-email data-email="aW5mb0BhZ2lsZWRldi5zaw==" data-text="Kontaktujte ma"></encode-email>
                 </h2>
                 <div class="icons">
-                    <a href="#" class="icon">
+                    <a href="#contact" class="icon" data-scroll>
                         <img src="assets/img/mail.svg" alt="email">
-                    </a>
-                    <a href="#" class="icon">
-                        <img src="assets/img/phone.svg" alt="mobil">
                     </a>
                     <a href="#" class="icon">
                         <img src="assets/img/facebook.svg" alt="facebook">
@@ -68,15 +65,15 @@
                         systémů, systému správy informací, webových služeb, mikropodniků nebo jiných nástrojů Java, technologií
                         Front-End end web a údržbu a sledovanie serverových aplikácií.</h2>
                     <div class="ctas">
-                        <a href="#experiences" class="cta cta--exp">Moje skúsenosti</a>
-                        <a href="#contact" class="cta cta--contact">Kontaktuje ma</a>
+                        <a href="#experiences" class="cta" data-scroll>Moje skúsenosti</a>
+                        <a href="#contact" class="cta" data-scroll>Kontaktuje ma</a>
                     </div>
                 </div>
                 <div class="hero__image">
                     <img src="assets/img/hero.png" alt="hero image">
                 </div>
             </section>
-            <section class="experiences">
+            <section class="experiences" id="experiences">
                 <h2 class="h"><span class="underline">Technické</span> znalosti, odborné&nbsp;<br>certifikáty a jazyky</h2>
                 <p>Počas svojej praxe som mal možnosť lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam erat
                     volutpat. Nullam sit amet magna in magna gravida vehicula. Proin mattis lacinia justo.
@@ -131,7 +128,7 @@
                 <div class="wrapper">
                     <div class="question">
                         <h2 class="h">Zaujali vás moje skúsenosti?<br>Máte zaujímavý projekt?</h2>
-                        <a href="#contact" class="cta cta--exp">Kontaktuje ma</a>
+                        <a href="#contact" class="cta" data-scroll>Kontaktuje ma</a>
                     </div>
                     <div class="other">
                         <div class="certs">
@@ -187,7 +184,34 @@
                 </div>
             </section>
         </main>
-        <footer></footer>
+        <footer class="site-footer" id="contact">
+            <h2 class="heading">Dohodnime si stretnutie</h2>
+            <div class="items">
+                <div class="item">
+                    <ul>
+                        <li>AgileDev s. r. o. (Mgr. Attila Bódis)</li>
+                        <li>Nám. SNP 198/50, Dunajská Streda 929 01</li>
+                        <li>IČO 52 622 037</li>
+                    </ul>
+                    <span class="social">
+                        <a href="#" class="icon icon--facebook">
+                            <img src="assets/img/facebook.svg" alt="facebook">
+                        </a>
+                        <a href="#" class="icon icon--linkedin">
+                            <img src="assets/img/linkedin.svg" alt="linkedin">
+                        </a>
+                    </span>
+                </div>
+                <div class="item">
+                    <span>Telefón</span>
+                    <encode-value class="phone" data-phone="KCs0MjEpIDkwNCA4NTIgMjU4"></encode-value>
+                </div>
+                <div class="item">
+                    <span>Email</span>
+                    <encode-value class="email" data-email="aW5mb0BhZ2lsZWRldi5zaw=="></encode-value>
+                </div>
+            </div>
+        </footer>
     </div>
 
 

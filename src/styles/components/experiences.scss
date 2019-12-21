@@ -5,7 +5,10 @@
 		@include font((
 			appearance: bold,
 			family: script,
-			size: 40px 60px,
+			size: (
+				0: 30px 44px,
+				7: 40px 60px
+			),
 		));
 		color: color(bold);
 		letter-spacing: 0;
@@ -20,18 +23,23 @@
 		letter-spacing: 0;
 	}
 	.wrapper {
-		@include margin(100px _ _ _);
+		@include margin(22px _ _ _);
 		align-items: center;
 		display: grid;
-		gap: 10%;
+		gap: rem(20px);
 		grid-template-columns: 1fr;
 		@include bp(10) {
+			@include margin(100px _ _ _);
+			gap: 10%;
 			grid-template-columns: 1fr 1fr;
 		}
 		.exp-img {
 			order: 2;
 			@include bp(10) {
 				order: 1;
+			}
+			object {
+				@include size(100%);
 			}
 		}
 		.skills {
@@ -43,14 +51,18 @@
 				order: 2;
 			}
 			.skill {
-				@include padding(20px 34px);
+				@include padding(20px 0);
 				align-items: center;
-				background-color: color(skills);
+				background-color: none;
 				border-radius: rem(14px);
 				box-shadow: 0 6px 12px 0 rgba(39, 29, 121, 0.25);
 				display: grid;
 				grid-template-columns: auto 1fr;
 				gap: rem(25px);
+				@include bp(7) {
+					@include padding(20px 34px);
+					background-color: color(skills);
+				}
 				p {
 					@include font((
 						appearance: regular,
@@ -87,7 +99,10 @@
 			.certs,
 			.languages {
 				display: grid;
-				grid-template-columns: rem(200px) auto;
+				grid-template-columns: 1fr;
+				@include bp(6) {
+					grid-template-columns: rem(200px) auto;
+				}
 				.h {
 					@include font((
 						appearance: bold,

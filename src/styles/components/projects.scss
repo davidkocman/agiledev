@@ -27,7 +27,7 @@
 		letter-spacing: 0;
 	}
 	p {
-		@include margin(_ 15% 60px);
+		@include margin(_ 0 60px);
 		@include font((
 			appearance: regular,
 			family: script,
@@ -35,6 +35,9 @@
 		));
 		color: color(regular);
 		letter-spacing: 0;
+		@include bp(6) {
+			@include margin(_ 15% 60px);
+		}
 		span {
 			color: color(white);
 		}
@@ -43,5 +46,8 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		img {
+			@include margin(_ 10px 16px);
+		}
 	}
 }

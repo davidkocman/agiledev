@@ -20,7 +20,7 @@ import 'Utils/_matches.polyfill.js';
 import collapse from 'Components/collapse.js';
 import smoothScroll from 'Components/smooth-scroll';
 import toggleElement from 'Components/toggle-element';
-import encodeEmail from 'Components/custom_elements/encodeEmail';
+import encodeValue from 'Components/custom_elements/encodeValue';
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -35,5 +35,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	toggleElement();
 
 	//Custom Elements
-	window.customElements.define('encode-email', encodeEmail);
+	window.customElements.define('encode-value', encodeValue);
 });

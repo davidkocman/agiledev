@@ -12,6 +12,7 @@ body {
 	}
 }
 .cta {
+	@include margin(_ 24px _ _);
 	@include size(200px 50px);
 	@include font((
 		appearance: bold,
@@ -19,18 +20,16 @@ body {
 		size: 14px,
 	));
 	align-items: center;
+	border: solid 1px color(border);
 	border-radius: rem(8px);
+	color: color(link);
 	display: flex;
 	justify-content: center;
 	letter-spacing: 0;
-	&--exp {
-		@include margin(_ 24px _ _);
+	&:focus,
+	&:hover {
 		background-color: color(button);
 		box-shadow: 0 4px 20px 0 rgba(9, 196, 172, 0.5);
 		color: color(white);
-	}
-	&--contact {
-		border: solid 1px color(border);
-		color: color(link);
 	}
 }
