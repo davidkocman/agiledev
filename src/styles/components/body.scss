@@ -26,7 +26,6 @@ body {
 	display: flex;
 	justify-content: center;
 	letter-spacing: 0;
-	&:focus,
 	&:hover {
 		background-color: color(button);
 		box-shadow: 0 4px 20px 0 rgba(9, 196, 172, 0.5);

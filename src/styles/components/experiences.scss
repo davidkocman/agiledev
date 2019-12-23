@@ -34,12 +34,15 @@
 			grid-template-columns: 1fr 1fr;
 		}
 		.exp-img {
+			@include size(100% _);
 			order: 2;
 			@include bp(10) {
 				order: 1;
 			}
 			object {
-				@include size(100%);
+				@include margin(0 auto);
+				@include max-size(100% _);
+				display: block;
 			}
 		}
 		.skills {
