@@ -1,5 +1,10 @@
 .experiences {
-	@include padding(_ _ 80px _);
+	@include margin(40px _ _ _);
+	@include padding(_ 20px 80px 20px);
+	@include bp(12) {
+		@include margin(0 _ _ _);
+		@include padding(_ 0 80px 0);
+	}
 	.h {
 		@include margin(_ _ 16px _);
 		@include font((
@@ -34,15 +39,12 @@
 			grid-template-columns: 1fr 1fr;
 		}
 		.exp-img {
-			@include size(100% _);
 			order: 2;
 			@include bp(10) {
 				order: 1;
 			}
-			object {
-				@include margin(0 auto);
+			img {
 				@include max-size(100% _);
-				display: block;
 			}
 		}
 		.skills {

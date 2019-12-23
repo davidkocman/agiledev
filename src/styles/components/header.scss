@@ -1,8 +1,12 @@
 .site-header {
 	@include size(100% 90px);
+	@include padding(_ 20px);
 	align-items: flex-end;
 	display: flex;
 	justify-content: space-between;
+	@include bp(12) {
+		@include padding(_ 0);
+	}
 	.contact {
 		align-items: flex-end;
 		display: flex;

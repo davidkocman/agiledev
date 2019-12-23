@@ -1,10 +1,13 @@
 .site-footer {
-	@include padding(114px _ 100px);
+	@include padding(114px 20px 100px);
 	background-color: color(footer);
 	position: relative;
 	text-align: center;
 	@include bp(7) {
 		text-align: left;
+	}
+	@include bp(12) {
+		@include padding(114px 0 100px);
 	}
 	&::before,
 	&::after {

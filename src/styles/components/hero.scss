@@ -1,14 +1,15 @@
 .hero {
 	@include min-size(_ 100vh);
-	@include padding(100px _ _);
+	@include padding(100px 20px _);
 	position: relative;
 	display: grid;
 	grid-template-columns: 1fr;
 	@include bp(12) {
 		grid-template-columns: 1fr 1fr;
+		@include padding(_ 0);
 	}
 	&::before {
-		@include absolute(-100px _ _ 50%, -1);
+		@include absolute(160px _ _ 50%, -1);
 		@include size(100vw 100%);
 		background-image: url('../assets/img/bgr-elements.svg');
 		background-position: center top;
@@ -16,6 +17,9 @@
 		content: '';
 		display: block;
 		transform: translateX(-50%);
+		@include bp(12) {
+			@include absolute(-100px _ _ 50%, -1);
+		}
 	}
 	&__text {
 		.h1 {
