@@ -14,9 +14,7 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import gulpStylelint from 'gulp-stylelint';
 import errorHandler from '../util/errorHandler.js';
-import { isProd } from "../util/env.js"
-
-// import { reload } from '../tasks/server';
+import { isDev } from "../util/env.js"
 import browserSync from 'browser-sync'
 
 // Config
@@ -25,7 +23,7 @@ import { paths } from "../config";
 export function scss() {
   return src(paths.styles.src)
     .pipe(plumber({ errorHandler }))
-    .pipe(gulpif(isProd, sourcemaps.init()))
+    .pipe(gulpif(isDev, sourcemaps.init()))
     .pipe(sassGlob())
     .pipe(sass({
       includePaths: ['node_modules'],
@@ -33,7 +31,7 @@ export function scss() {
     }))
     .pipe(postcss([autoprefixer()]))
 
-    .pipe(gulpif(isProd, sourcemaps.write('.')))
+    .pipe(gulpif(isDev, sourcemaps.write('.')))
     .pipe(dest(paths.styles.dest))
     .pipe(browserSync.stream())
 }
@@ -41,7 +39,7 @@ export function scss() {
 export function stylelint() {
   return src(paths.styles.lint)
     .pipe(gulpStylelint({
-      failAfterError: isProd,
+      failAfterError: isDev,
       reporters: [{ formatter: 'string', console: true }],
       syntax: 'scss'
     }));
