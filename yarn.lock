@@ -1461,11 +1461,6 @@ bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.1.1, bn.js@^4.4.0:
   resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.11.8.tgz#2cde09eb5ee341f484746bb0309b3253b1b1442f"
   integrity sha512-ItfYfPLkWHUjckQCk8xC+LwxgK8NYcXywGigJgSwOP8Y2iyWT4f2vsZnoOXTTbo+o5yXmIUJ4gn5538SO5S3gA==
 
-bootstrap@^4.3.1:
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.3.1.tgz#280ca8f610504d99d7b6b4bfc4b68cec601704ac"
-  integrity sha512-rXqOmH1VilAt2DyPzluTi2blhk17bO7ef+zLLPlWvG494pDxcM234pJ8wTc/6R40UWizAIIMgxjvxZg5kmsbag==
-
 brace-expansion@^1.1.7:
   version "1.1.11"
   resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.11.tgz#3c7fcbf529d87226f3d2f52b966ff5271eb441dd"
@@ -2460,11 +2455,6 @@ des.js@^1.0.0:
     inherits "^2.0.1"
     minimalistic-assert "^1.0.0"
 
-desandro-matches-selector@^2.0.0:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/desandro-matches-selector/-/desandro-matches-selector-2.0.2.tgz#717beed4dc13e7d8f3762f707a6d58a6774218e1"
-  integrity sha1-cXvu1NwT59jzdi9wem1YpndCGOE=
-
 destroy@~1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.0.4.tgz#978857442c44749e4206613e37946205826abd80"
@@ -2785,11 +2775,6 @@ es6-promise@^2.3.0:
   resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-2.3.0.tgz#96edb9f2fdb01995822b263dd8aadab6748181bc"
   integrity sha1-lu258v2wGZWCKyY92KratnSBgbw=
 
-es6-promise@^4.2.5:
-  version "4.2.8"
-  resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-4.2.8.tgz#4eb21594c972bc40553d276e510539143db53e0a"
-  integrity sha512-HJDGx5daxeIvxdBxvG2cb9g4tEvwIk3i8+nhX0yGrYmZUzbkdg8QbDevheDB8gd0//uPj4c1EQua8Q+MViT0/w==
-
 es6-symbol@^3.1.1, es6-symbol@~3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/es6-symbol/-/es6-symbol-3.1.1.tgz#bf00ef4fdab6ba1b46ecb7b629b4c7ed5715cc77"
@@ -2931,11 +2916,6 @@ etag@1.8.1, etag@^1.8.1, etag@~1.8.1:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
-
-ev-emitter@^1.0.1, ev-emitter@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/ev-emitter/-/ev-emitter-1.1.1.tgz#8f18b0ce5c76a5d18017f71c0a795c65b9138f2a"
-  integrity sha512-ipiDYhdQSCZ4hSbX4rMW+XzNKMD1prg/sTvoVmSLkuQ1MVlwjJQQA+sW8tMYR3BLUr9KjodFV4pvzunvRhd33Q==
 
 event-emitter@^0.3.5:
   version "0.3.5"
@@ -3259,13 +3239,6 @@ first-chunk-stream@^1.0.0:
   resolved "https://registry.yarnpkg.com/first-chunk-stream/-/first-chunk-stream-1.0.0.tgz#59bfb50cd905f60d7c394cd3d9acaab4e6ad934e"
   integrity sha1-Wb+1DNkF9g18OUzT2ayqtOatk04=
 
-fizzy-ui-utils@^2.0.7:
-  version "2.0.7"
-  resolved "https://registry.yarnpkg.com/fizzy-ui-utils/-/fizzy-ui-utils-2.0.7.tgz#7df45dcc4eb374a08b65d39bb9a4beedf7330505"
-  integrity sha512-CZXDVXQ1If3/r8s0T+v+qVeMshhfcuq0rqIFgJnrtd+Bu8GmDmqMjntjUePypVtjHXKJ6V4sw9zeyox34n9aCg==
-  dependencies:
-    desandro-matches-selector "^2.0.0"
-
 flagged-respawn@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/flagged-respawn/-/flagged-respawn-1.0.1.tgz#e7de6f1279ddd9ca9aac8a5971d618606b3aab41"
@@ -3284,18 +3257,6 @@ flatted@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-2.0.1.tgz#69e57caa8f0eacbc281d2e2cb458d46fdb449e08"
   integrity sha512-a1hQMktqW9Nmqr5aktAux3JMNqaucxGcjtjWnZLHX7yyPCmlSV3M54nGYbqT8K+0GhF3NBgmJCc3ma+WOgX8Jg==
-
-flickity@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/flickity/-/flickity-2.2.1.tgz#81126e3d656cb54577358a5f959ffdbda088e670"
-  integrity sha512-fCZJGNqabgDrIhaUBqt2ydE8c5V6iiB3KQAf6dH3Z45MoDUm7g6+uZmteN0aLV9pzVItNqCbfOJQjsJM/rHuSA==
-  dependencies:
-    desandro-matches-selector "^2.0.0"
-    ev-emitter "^1.1.1"
-    fizzy-ui-utils "^2.0.7"
-    get-size "^2.0.3"
-    unidragger "^2.3.0"
-    unipointer "^2.3.0"
 
 flush-write-stream@^1.0.0, flush-write-stream@^1.0.2:
   version "1.1.1"
@@ -3472,11 +3433,6 @@ get-caller-file@^1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-1.0.3.tgz#f978fa4c90d1dfe7ff2d6beda2a515e713bdcf4a"
   integrity sha512-3t6rVToeoZfYSGd8YoLFR2DJkiQrIiUrGcjvFX2mDw3bn6k2OtwHN0TNCLbBO+w8qTvimhDkv+LSscbJY1vE6w==
-
-get-size@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/get-size/-/get-size-2.0.3.tgz#54a1d0256b20ea7ac646516756202769941ad2ef"
-  integrity sha512-lXNzT/h/dTjTxRbm9BXb+SGxxzkm97h/PCIKtlN/CBCxxmkkIVV21udumMS93MuVTDX583gqc94v3RjuHmI+2Q==
 
 get-stdin@^4.0.1:
   version "4.0.1"
@@ -4949,11 +4905,9 @@ locate-path@^3.0.0:
     path-exists "^3.0.0"
 
 locutus@^2.0.5:
-  version "2.0.11"
-  resolved "https://registry.yarnpkg.com/locutus/-/locutus-2.0.11.tgz#83f85109971fd3dd620482a04381916e4a31d4f0"
-  integrity sha512-C0q1L38lK5q1t+wE0KY21/9szrBHxye6o2z5EJzU+5B79tubNOC+nLAEzTTn1vPUGoUuehKh8kYKqiVUTWRyaQ==
-  dependencies:
-    es6-promise "^4.2.5"
+  version "2.0.15"
+  resolved "https://registry.yarnpkg.com/locutus/-/locutus-2.0.15.tgz#d75b9100713aaaf30be8b38ed6543910498c0db0"
+  integrity sha512-2xWC4RkoAoCVXEb/stzEgG1TNgd+mrkLBj6TuEDNyUoKeQ2XzDTyJUC23sMiqbL6zJmJSP3w59OZo+zc4IBOmA==
 
 lodash._basecopy@^3.0.0:
   version "3.0.1"
@@ -8351,13 +8305,6 @@ unicode-property-aliases-ecmascript@^1.0.4:
   resolved "https://registry.yarnpkg.com/unicode-property-aliases-ecmascript/-/unicode-property-aliases-ecmascript-1.0.5.tgz#a9cc6cc7ce63a0a3023fc99e341b94431d405a57"
   integrity sha512-L5RAqCfXqAwR3RriF8pM0lU0w4Ryf/GgzONwi6KnL1taJQa7x1TCxdJnILX59WIGOwR57IVxn7Nej0fz1Ny6fw==
 
-unidragger@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/unidragger/-/unidragger-2.3.0.tgz#ab9d9fd62106f3252d88fae5f3a99575e6d31d02"
-  integrity sha512-dVkSqQdwcsaNmXaandBAOcJ4QVvkrDPosfCcZ7opYPkAiisCQaGlNw0pg00lBV4MQoWEXsEaiwhtQlbnvlXrQQ==
-  dependencies:
-    unipointer "^2.3.0"
-
 unified@^7.0.0:
   version "7.1.0"
   resolved "https://registry.yarnpkg.com/unified/-/unified-7.1.0.tgz#5032f1c1ee3364bd09da12e27fdd4a7553c7be13"
@@ -8381,13 +8328,6 @@ union-value@^1.0.0:
     get-value "^2.0.6"
     is-extendable "^0.1.1"
     set-value "^2.0.1"
-
-unipointer@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/unipointer/-/unipointer-2.3.0.tgz#ba0dc462ce31c2a88e80810e19c3bae0ce47ed9f"
-  integrity sha512-m85sAoELCZhogI1owtJV3Dva7GxkHk2lI7A0otw3o0OwCuC/Q9gi7ehddigEYIAYbhkqNdri+dU1QQkrcBvirQ==
-  dependencies:
-    ev-emitter "^1.0.1"
 
 uniq@^1.0.1:
   version "1.0.1"
